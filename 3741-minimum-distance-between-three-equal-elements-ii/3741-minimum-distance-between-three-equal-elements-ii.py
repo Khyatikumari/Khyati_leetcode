@@ -1,10 +1,17 @@
 class Solution:
     def minimumDistance(self, nums: List[int]) -> int:
-        n, M=len(nums), max(nums)
-        pos=[(-1, -1) for _ in range(M+1)]
-        ans=1<<32
-        for k, x in enumerate(nums):
-            if pos[x][1]!=-1:
-                ans=min(ans, (k-pos[x][1])<<1)
-            pos[x]=k, pos[x][0]
-        return -1 if ans==1<<32 else ans           
+        min_length = len(nums) + 1
+
+        last_indices = [-1] * min_length
+        second_to_last_indices = [-1] * min_length
+
+        min_dist = math.inf
+        for i, num in enumerate(nums):
+            if second_to_last_indices[num] != -1:
+                dist = i - second_to_last_indices[num]
+                if min_dist > dist:
+                    min_dist = dist
+            second_to_last_indices[num], last_indices[num] = last_indices[num], i
+        if min_dist == math.inf:
+            return -1
+        return 2 * min_dist
