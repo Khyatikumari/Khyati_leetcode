@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [1848-minimum-distance-to-the-target-element](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 ## Hash Table
 |  |
