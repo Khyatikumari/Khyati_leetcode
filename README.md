@@ -13,10 +13,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 ## String
 |  |
 | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 ## Dynamic Programming
@@ -40,4 +42,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0002-add-two-numbers) |
+## Sliding Window
+|  |
+| ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
 <!---LeetCode Topics End-->
