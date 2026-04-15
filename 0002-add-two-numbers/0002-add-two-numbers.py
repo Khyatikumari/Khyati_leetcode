@@ -4,26 +4,28 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        dummyHead = ListNode(0)
-        tail = dummyHead
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         carry = 0
+        initn = ListNode(-1)
+        k = initn
 
-        while l1 is not None or l2 is not None or carry != 0:
-            digit1 = l1.val if l1 is not None else 0
-            digit2 = l2.val if l2 is not None else 0
+        # iterate both lists with 2 pointers
+        # add values, create new node and attach to previous
+        # continue adding till any one of the list is done
+        # then iterate the remaining parts of the list and add 
 
-            sum = digit1 + digit2 + carry
-            digit = sum % 10
-            carry = sum // 10
+        while l1 or l2 or carry:
+            v1 = l1.val if l1 else 0
+            v2 = l2.val if l2 else 0
+            
+            res = v1 + v2 + carry
+            carry = res // 10
+            
+            curr = ListNode(res % 10, None)
+            k.next = curr
+            k = curr
 
-            newNode = ListNode(digit)
-            tail.next = newNode
-            tail = tail.next
-
-            l1 = l1.next if l1 is not None else None
-            l2 = l2.next if l2 is not None else None
-
-        result = dummyHead.next
-        dummyHead.next = None
-        return result
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+        
+        return initn.next
