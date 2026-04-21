@@ -1,33 +1,54 @@
+class UF:
+    def __init__(self, N):
+        self.parent = [i for i in range(N)]
+
+    def find(self, u):
+        if self.parent[u] == u:
+            return self.parent[u]
+
+        self.parent[u] = self.find(self.parent[u])
+
+        return self.parent[u]
+
+    def union(self, u, v):
+        pu = self.find(u)
+        pv = self.find(v)
+
+        if pu == pv:
+            return
+
+        self.parent[pu] = pv
+
 class Solution:
-    def minimumHammingDistance(self, source: list[int], target: list[int], allowedSwaps: list[list[int]]) -> int:
-        n = len(source)
-        parent = list(range(n))
+    def minimumHammingDistance(self, source: List[int], target: List[int], allowedSwaps: List[List[int]]) -> int:
+        N = len(source)
 
-        def find(x):
-            if parent[x] != x:
-                parent[x] = find(parent[x])
-            return parent[x]
+        uf = UF(N)
 
-        def unite(a, b):
-            parent[find(a)] = find(b)
+        for i, j in allowedSwaps:
+            uf.union(i, j)
+        
+        groups = {}
+        for i in range(N):
+            root = uf.find(i)
 
-        for a, b in allowedSwaps:
-            unite(a, b)
+            if root not in groups:
+                groups[root] = []
 
-        # Group source values by their component root
-        from collections import defaultdict, Counter
-        groups = defaultdict(list)
-        for i in range(n):
-            groups[find(i)].append(source[i])
-        groups = {root: Counter(vals) for root, vals in groups.items()}
+            groups[root].append(i)
+        
+        res = 0
+        for key in groups:
+            indices = groups[key]
 
-        hamming_dist = 0
-        for i in range(n):
-            root = find(i)
-            freq = groups[root]
-            if freq[target[i]] > 0:
-                freq[target[i]] -= 1  # matched, consume this source value
-            else:
-                hamming_dist += 1     # no match found in this component
-
-        return hamming_dist    
+            counter = {}
+            for i in indices:
+                counter[source[i]] = counter.get(source[i], 0) + 1
+            
+            for i in indices:
+                if counter.get(target[i], 0) > 0:
+                    counter[target[i]] -= 1
+                else:
+                    res += 1
+        
+        return res
