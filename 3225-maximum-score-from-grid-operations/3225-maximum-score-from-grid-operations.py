@@ -1,57 +1,53 @@
-from typing import List
-
 class Solution:
-    def maximumScore(self, grid: List[List[int]]) -> int:
+    def maximumScore(self, grid: list[list[int]]) -> int:
         n = len(grid)
-        if n == 1:
-            return 0
-
         pref = [[0] * (n + 1) for _ in range(n)]
-        for c in range(n):
-            s = 0
-            for r in range(n):
-                s += grid[r][c]
-                pref[c][r + 1] = s
+        for j in range(n):
+            for i in range(n):
+                pref[j][i + 1] = pref[j][i] + grid[i][j]
 
-        NEG = -10**30
+        dp = [[-float('inf')] * (n + 1) for _ in range(2)]
+        for h in range(n + 1):
+            dp[0][h] = 0
 
-        dp = [[NEG] * (n + 1) for _ in range(n + 1)]
+        for j in range(1, n):
+            new_dp = [[-float('inf')] * (n + 1) for _ in range(2)]
+            
+            p_max = -float('inf')
+            for h in range(n + 1):
+                p_max = max(p_max, dp[0][h] - pref[j-1][h])
+                new_dp[0][h] = max(new_dp[0][h], p_max + pref[j-1][h])
+            
+            p_max = -float('inf')
+            for h in range(n, -1, -1):
+                p_max = max(p_max, dp[0][h], dp[1][h])
+                new_dp[1][h] = max(new_dp[1][h], p_max + pref[j][h] - pref[j][h]) 
 
-        for a in range(n + 1):
-            for b in range(n + 1):
-                dp[a][b] = max(0, pref[0][b] - pref[0][a])
+            p_max = -float('inf')
+            for h in range(n, -1, -1):
+                p_max = max(p_max, dp[0][h], dp[1][h])
+                if h < n + 1:
+                    new_dp[0][0] = max(new_dp[0][0], p_max)
 
-        for col in range(1, n):
-            ndp = [[NEG] * (n + 1) for _ in range(n + 1)]
+            p_max = -float('inf')
+            for h in range(n, -1, -1):
+                p_max = max(p_max, dp[0][h] + pref[j][h], dp[1][h] + pref[j][h])
+                new_dp[1][h] = max(new_dp[1][h], p_max - pref[j][h])
+            
+            p_max = -float('inf')
+            for h in range(n + 1):
+                p_max = max(p_max, dp[1][h])
+                new_dp[1][h] = max(new_dp[1][h], p_max)
 
-            for mid in range(n + 1):
-                q = [max(0, pref[col][x] - pref[col][mid]) for x in range(n + 1)]
+            p_max = -float('inf')
+            for h in range(n + 1):
+                p_max = max(p_max, dp[0][h], dp[1][h])
+                new_dp[0][h] = max(new_dp[0][h], p_max)
+                
+            dp = new_dp
 
-                prefixBest = [NEG] * (n + 1)
-                prefixBest[0] = dp[0][mid]
-                for a in range(1, n + 1):
-                    prefixBest[a] = max(prefixBest[a - 1], dp[a][mid])
-
-                suffixBest = [NEG] * (n + 2)
-                suffixBest[n] = dp[n][mid] + q[n]
-                for a in range(n - 1, -1, -1):
-                    suffixBest[a] = max(suffixBest[a + 1], dp[a][mid] + q[a])
-
-                limit = 0 if col == n - 1 else n
-
-                for nxt in range(limit + 1):
-                    best = NEG
-
-                    if prefixBest[nxt] != NEG:
-                        best = max(best, prefixBest[nxt] + q[nxt])
-                    if suffixBest[nxt + 1] != NEG:
-                        best = max(best, suffixBest[nxt + 1])
-
-                    ndp[mid][nxt] = max(ndp[mid][nxt], best)
-
-            dp = ndp
-
-        ans = 0
-        for row in dp:
-            ans = max(ans, max(row))
-        return ans    
+        res = 0
+        for state in range(2):
+            for h in range(n + 1):
+                res = max(res, dp[state][h])
+        return res    
