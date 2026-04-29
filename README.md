@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2463-minimum-total-distance-traveled](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2463-minimum-total-distance-traveled) |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 | [2615-sum-of-distances](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2615-sum-of-distances) |
+| [3225-maximum-score-from-grid-operations](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3488-closest-equal-element-queries](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -41,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2463-minimum-total-distance-traveled](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2463-minimum-total-distance-traveled) |
+| [3225-maximum-score-from-grid-operations](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 ## Sorting
 |  |
 | ------- |
@@ -101,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2615-sum-of-distances](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2615-sum-of-distances) |
+| [3225-maximum-score-from-grid-operations](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 ## Geometry
 |  |
 | ------- |
@@ -118,4 +121,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [3225-maximum-score-from-grid-operations](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 <!---LeetCode Topics End-->
