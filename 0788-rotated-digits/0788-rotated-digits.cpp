@@ -1,31 +1,25 @@
 class Solution {
 public:
-    int rotatedDigits(int n) {
-        vector<int> dp(n + 1, 0);
-        int count = 0;
+    int memo[12][2][2];
+    string S;
+    int dp(int pos,bool tight,bool is_diff)
+    {
+        if(pos==S.size())return is_diff; 
+        if(memo[pos][tight][is_diff] != -1)return memo[pos][tight][is_diff];
 
-        for(int i = 0; i <= n; i++){
-            if(i < 10){
-                if(i == 0 || i == 1 || i == 8) dp[i] = 1;
-                else if(i == 2 || i == 5 || i == 6 || i == 9){
-                    dp[i] = 2;
-                    count++;
-                }
-                else dp[i] = 0;
-            }
-            else{
-                int a = dp[i / 10];
-                int b = dp[i % 10];
+        int res=0;
+        int limit=tight ? S[pos]-'0' : 9;
 
-                if(a == 1 && b == 1) dp[i] = 1;
-                else if(a >= 1 && b >= 1){
-                    dp[i] = 2;
-                    count++;
-                }
-                else dp[i] = 0;
-            }
+        for(int d=0;d<=limit; d++) {
+            if(d==3 || d == 4 || d == 7)continue;
+            bool next_diff=is_diff ||(d == 2 || d == 5 || d == 6 || d == 9);
+            res+=dp(pos+1, tight && (d==limit), next_diff);
         }
-
-        return count;
+        return memo[pos][tight][is_diff] = res;
+    }
+    int rotatedDigits(int n){
+        S=to_string(n);
+        memset(memo, -1, sizeof(memo));
+        return dp(0,true,false);
     }
 };
