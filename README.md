@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -41,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2463-minimum-total-distance-traveled](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2463-minimum-total-distance-traveled) |
@@ -61,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0002-add-two-numbers) |
+| [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
