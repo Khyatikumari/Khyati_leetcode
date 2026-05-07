@@ -1,36 +1,36 @@
-from typing import List
-
 class Solution:
     def maxValue(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        if n == 0:
-            return []
-        
-        # prefix maximums
-        pref_max = [0] * n
-        pref_max[0] = nums[0]
-        for i in range(1, n):
-            pref_max[i] = max(pref_max[i-1], nums[i])
-        
-        # suffix minimums
-        suff_min = [0] * n
-        suff_min[-1] = nums[-1]
-        for i in range(n-2, -1, -1):
-            suff_min[i] = min(suff_min[i+1], nums[i])
-        
-        ans = [0] * n
-        start = 0
-        for i in range(n-1):
-            if pref_max[i] <= suff_min[i+1]:
-                # segment [start, i]
-                seg_max = max(nums[start:i+1])
-                for j in range(start, i+1):
-                    ans[j] = seg_max
-                start = i + 1
-        
-        # last segment
-        seg_max = max(nums[start:])
-        for j in range(start, n):
-            ans[j] = seg_max
-        
+        N = len(nums)
+        ans = [nums[0]] # prefix
+        for i in range(1, N):
+            ans.append(max(ans[-1], nums[i]))
+
+        min_idx = N - 1
+        for i in range(N - 2, -1, -1):
+            if ans[i] > nums[min_idx]:
+                ans[i] = ans[min_idx]
+            if nums[i] < nums[min_idx]:
+                min_idx = i
         return ans
+            
+
+'''
+2  3  1
+2, 3, 3
+
+2 1 | 8 6 | 7 3 2 2 | 11  7 | 14 13
+2 2   8 8   8 8 8 8   11 11   14 14
+                      7   7   13 13 
+
+              0, 6
+              2, 8
+              7, 11
+
+'''
+
+
+
+
+
+
+        
