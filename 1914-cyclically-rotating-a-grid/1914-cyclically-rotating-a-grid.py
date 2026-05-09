@@ -1,78 +1,32 @@
 class Solution:
     def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
-        m = len(grid)
-        n = len(grid[0])
-
-        layers = min(m, n) // 2
-
-        for layer in range(layers):
-
-            vals = []
-
-            top = layer
-            left = layer
-
-            bottom = m - layer - 1
-            right = n - layer - 1
-
-            # top row
-            for j in range(left, right + 1):
-                vals.append(grid[top][j])
-
-            # right column
-            for i in range(top + 1, bottom):
-                vals.append(grid[i][right])
-
-            # bottom row
-            for j in range(right, left - 1, -1):
-                vals.append(grid[bottom][j])
-
-            # left column
-            for i in range(bottom - 1, top, -1):
-                vals.append(grid[i][left])
-
-            sz = len(vals)
-
-            idx = k % sz
-
-            # top row
-            for j in range(left, right + 1):
-
-                grid[top][j] = vals[idx]
-
-                idx += 1
-
-                if idx == sz:
-                    idx = 0
-
-            # right column
-            for i in range(top + 1, bottom):
-
-                grid[i][right] = vals[idx]
-
-                idx += 1
-
-                if idx == sz:
-                    idx = 0
-
-            # bottom row
-            for j in range(right, left - 1, -1):
-
-                grid[bottom][j] = vals[idx]
-
-                idx += 1
-
-                if idx == sz:
-                    idx = 0
-
-            # left column
-            for i in range(bottom - 1, top, -1):
-
-                grid[i][left] = vals[idx]
-
-                idx += 1
-
-                if idx == sz:
-                    idx = 0
-
+        m, n = len(grid), len(grid[0])
+        nlayer = min(m // 2, n // 2)   # level count
+        # enumerate each layer counterclockwise starting from the top-left corner
+        for layer in range(nlayer):
+            r = []   # row index of each element
+            c = []   # column index of each element
+            val = []   # value of each element
+            for i in range(layer, m - layer - 1):   # left 
+                r.append(i)
+                c.append(layer)
+                val.append(grid[i][layer])
+            for j in range(layer, n - layer - 1):   # down
+                r.append(m - layer - 1)
+                c.append(j)
+                val.append(grid[m-layer-1][j])
+            for i in range(m - layer - 1, layer, -1):   # right
+                r.append(i)
+                c.append(n - layer - 1)
+                val.append(grid[i][n-layer-1])
+            for j in range(n - layer - 1, layer, -1):   # up
+                r.append(layer)
+                c.append(j)
+                val.append(grid[layer][j])
+            total = len(val)   # total number of elements in each layer
+            kk = k % total   # equivalent number of rotations
+            # find the value at each index after rotation
+            for i in range(total):
+                idx = (i + total - kk) % total   # the index corresponding to the value after rotation
+                grid[r[i]][c[i]] = val[idx]
         return grid
