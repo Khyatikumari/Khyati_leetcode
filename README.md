@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
+| [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0796-rotate-string](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0796-rotate-string) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
@@ -163,4 +165,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1914-cyclically-rotating-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1914-cyclically-rotating-a-grid) |
+## Stack
+|  |
+| ------- |
+| [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 <!---LeetCode Topics End-->
