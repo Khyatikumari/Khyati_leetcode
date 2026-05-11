@@ -1,15 +1,43 @@
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-        res = []
+
         candidates.sort()
-        def dfs(idx, path, cur):
-            if cur > target: return
-            if cur == target:
-                res.append(path)
+
+        result = []
+
+        def backtrack(start, current, remaining):
+
+            # Found valid combination
+            if remaining == 0:
+                result.append(current[:])
                 return
-            for i in range(idx, len(candidates)):
-                if i > idx and candidates[i] == candidates[i-1]:
+
+            # Invalid path
+            if remaining < 0:
+                return
+
+            for i in range(start, len(candidates)):
+
+                # Skip duplicates
+                if i > start and candidates[i] == candidates[i - 1]:
                     continue
-                dfs(i+1, path+[candidates[i]], cur+candidates[i])
-        dfs(0, [], 0)
-        return res
+
+                # Pruning
+                if candidates[i] > remaining:
+                    break
+
+                current.append(candidates[i])
+
+                # Move to next index (use once only)
+                backtrack(
+                    i + 1,
+                    current,
+                    remaining - candidates[i]
+                )
+
+                # Backtrack
+                current.pop()
+
+        backtrack(0, [], target)
+
+        return result
