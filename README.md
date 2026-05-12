@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2463-minimum-total-distance-traveled](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2463-minimum-total-distance-traveled) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
@@ -121,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 ## Depth-First Search
 |  |
