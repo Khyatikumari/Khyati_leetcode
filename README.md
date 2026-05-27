@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
+| [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
 | [0796-rotate-string](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0796-rotate-string) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [1871-jump-game-vii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1871-jump-game-vii) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0002-add-two-numbers) |
+| [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
@@ -222,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
 | [1914-cyclically-rotating-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1914-cyclically-rotating-a-grid) |
 | [2553-separate-the-digits-in-an-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2553-separate-the-digits-in-an-array) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
