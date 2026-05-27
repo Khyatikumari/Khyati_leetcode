@@ -1,19 +1,11 @@
 class Solution(object):
     def multiply(self, num1, num2):
-        """
-        :type num1: str
-        :type num2: str
-        :rtype: str
-        """
-        n, m = len(num1), len(num2)
-        result = [0] * (n + m)
-
-        for i in range(n - 1, -1, -1):
-            for j in range(m - 1, -1, -1):
-                mul = (ord(num1[i]) - ord('0')) * (ord(num2[j]) - ord('0'))
-                sum_ = mul + result[i + j + 1]
-                result[i + j + 1] = sum_ % 10
-                result[i + j] += sum_ // 10
-
-        product = ''.join(map(str, result)).lstrip('0')
-        return product if product else "0"    
+        digit_map={'0':0,'1':1,'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9}
+        n1=0
+        for num in num1:
+            n1=(n1*10)+digit_map[num]
+        n2=0
+        for i in num2:
+            n2=(n2*10)+digit_map[i]
+        return str(n1*n2)
+        
