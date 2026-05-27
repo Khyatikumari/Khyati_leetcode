@@ -1,47 +1,51 @@
 #include <string>
 #include <vector>
-#include <unordered_set>
+#include <algorithm>
+
 using namespace std;
+
+#pragma GCC optimize("Ofast,unroll-loops")
+
+static const int _ = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    return 0;
+}();
 
 class Solution {
 public:
     int numberOfSpecialChars(string word) {
-        vector<int> last_lower(26, -1);
-        vector<int> first_upper(26, -1);
-        unordered_set<int> invalid;
-
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word[i];
-
-            if (ch >= 'a' && ch <= 'z') {
-                int idx = ch - 'a';
-
-                last_lower[idx] = i;
-
-                if (first_upper[idx] != -1) {
-                    invalid.insert(idx);
-                }
-
+        // Используем массивы фиксированного размера вместо векторов для скорости
+        int lastLower[26];
+        int firstUpper[26];
+        
+        // Инициализация -1 (не найдено)
+        for (int i = 0; i < 26; ++i) {
+            lastLower[i] = -1;
+            firstUpper[i] = -1;
+        }
+        
+        int n = word.length();
+        for (int i = 0; i < n; ++i) {
+            char c = word[i];
+            if (c >= 'a' && c <= 'z') {
+                lastLower[c - 'a'] = i; // Всегда обновляем на последнюю
             } else {
-                int idx = ch - 'A';
-
-                if (first_upper[idx] == -1) {
-                    first_upper[idx] = i;
+                int idx = c - 'A';
+                if (firstUpper[idx] == -1) {
+                    firstUpper[idx] = i; // Записываем только первую позицию
                 }
             }
         }
-
-        int special_count = 0;
-
-        for (int i = 0; i < 26; i++) {
-            if (last_lower[i] != -1 &&
-                first_upper[i] != -1 &&
-                !invalid.count(i)) {
-
-                special_count++;
+        
+        int count = 0;
+        for (int i = 0; i < 26; ++i) {
+            // Условие: обе найдены и порядок соблюден
+            if (lastLower[i] != -1 && firstUpper[i] != -1 && lastLower[i] < firstUpper[i]) {
+                count++;
             }
         }
-
-        return special_count;
+        
+        return count;
     }
 };
