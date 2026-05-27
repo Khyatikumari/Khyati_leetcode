@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0040-combination-sum-ii) |
 | [0041-first-missing-positive](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0045-jump-game-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
@@ -162,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0045-jump-game-ii) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 ## Depth-First Search
