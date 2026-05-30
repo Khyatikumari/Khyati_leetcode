@@ -1,107 +1,97 @@
-from typing import List
+from sortedcontainers import SortedDict
 
-class Fenwick:
-    def __init__(self, n: int) -> None:
-        self.n = n
-        self.bit = [0] * (n + 1)
+class Obstacle:
+    def __init__(self, x: int, max_gap: int, previous: Obstacle):
+        self.x = x
+        self.max_gap = max_gap
+        self.previous = previous
+        self.next = None   
 
-    def add(self, idx: int, val: int) -> None:
-        while idx <= self.n:
-            self.bit[idx] += val
-            idx += idx & -idx
-
-    def sum(self, idx: int) -> int:
-        res = 0
-        while idx > 0:
-            res += self.bit[idx]
-            idx -= idx & -idx
-        return res
-
-    def kth(self, k: int) -> int:
-        idx = 0
-        step = 1
-        while (step << 1) <= self.n:
-            step <<= 1
-
-        d = step
-        while d:
-            nxt = idx + d
-            if nxt <= self.n and self.bit[nxt] < k:
-                idx = nxt
-                k -= self.bit[nxt]
-            d >>= 1
-        return idx + 1
-
-
-class SegTree:
-    def __init__(self, n: int) -> None:
-        self.n = n
-        self.tree = [0] * max(4, 4 * n)
-
-    def update(self, node: int, l: int, r: int, pos: int, val: int) -> None:
-        if l == r:
-            self.tree[node] = val
-            return
-        mid = (l + r) // 2
-        if pos <= mid:
-            self.update(node * 2, l, mid, pos, val)
+    def deep_print(self):
+        if self.next is not None:
+            print(f"[{self.x}:{self.max_gap}] ->", end = " ")
+            self.next.deep_print()
         else:
-            self.update(node * 2 + 1, mid + 1, r, pos, val)
-        self.tree[node] = max(self.tree[node * 2], self.tree[node * 2 + 1])
+            print(f"[{self.x}:{self.max_gap}]")
 
-    def query(self, node: int, l: int, r: int, ql: int, qr: int) -> int:
-        if ql > r or qr < l:
-            return 0
-        if ql <= l and r <= qr:
-            return self.tree[node]
-        mid = (l + r) // 2
-        return max(
-            self.query(node * 2, l, mid, ql, qr),
-            self.query(node * 2 + 1, mid + 1, r, ql, qr),
-        )
-
+    def remove(self):
+        self.previous.next = self.next
+        if self.next is not None:
+            self.next.previous = self.previous
+        return self.next
 
 class Solution:
+    def can_place(self, obstacles_tree: SortedDict, obstacles_max_gaps: SortedDict, x: int, size: int) -> bool:
+        previous_obstacle_max_gap = obstacles_max_gaps.get(next(obstacles_max_gaps.irange(maximum=x, reverse=True), None))
+        if previous_obstacle_max_gap.max_gap >= size:
+            return True
+        previous_obstacle = obstacles_tree.get(next(obstacles_tree.irange(maximum=x, reverse=True), None))
+        if x - previous_obstacle.x >= size:
+            return True
+        return False
+
+    def remove(self, obstacle_treemap: SortedDict, obstacles_max_gaps: SortedDict, x: int):
+        obstacle_to_remove = obstacle_treemap.pop(x)
+        next_obstacle = obstacle_to_remove.remove() # nullable
+        obstacle_max_gap_to_remove = obstacles_max_gaps.pop(x, None)
+        if obstacle_max_gap_to_remove is not None:
+            obstacle_max_gap_to_remove.remove()
+        if next_obstacle is not None:
+            new_gap = next_obstacle.x - next_obstacle.previous.x
+            gap_x = next_obstacle.x
+            previous_obstacle_max_gap = obstacles_max_gaps.get(next(obstacles_max_gaps.irange(maximum=x, reverse=True), None))
+            if previous_obstacle_max_gap.max_gap < new_gap:
+                next_obstacle_max_gap = previous_obstacle_max_gap.next
+                while next_obstacle_max_gap is not None and next_obstacle_max_gap.max_gap <= new_gap:
+                    obstacles_max_gaps.pop(next_obstacle_max_gap.x)
+                    next_obstacle_max_gap = next_obstacle_max_gap.remove()
+                previous_node = previous_obstacle_max_gap
+                next_node = next_obstacle_max_gap # nullable
+                new_node = Obstacle(gap_x, new_gap, previous_node)
+                previous_node.next = new_node
+                new_node.next = next_node
+                if next_node is not None:
+                    next_node.previous = new_node
+                obstacles_max_gaps[new_node.x] = new_node
+            
+
     def getResults(self, queries: List[List[int]]) -> List[bool]:
-        mx = 0
-        for q in queries:
-            mx = max(mx, q[1])
+        obstacles = []
+        for query in queries:
+            if query[0] == 1:
+                obstacles.append(query[1])
+        obstacles.sort()
+        max_gap = 0
+        first_obstacle = Obstacle(0,0,None)
+        last_obstacle = first_obstacle
+        first_max_gap_obstacle = Obstacle(0,0,None)
+        last_max_gap_obstacle = first_max_gap_obstacle
+        obstacles_max_gaps = SortedDict()
+        obstacles_tree = SortedDict()
+        obstacles_max_gaps[first_max_gap_obstacle.x] = first_max_gap_obstacle
+        obstacles_tree[first_obstacle.x] = first_obstacle
+        for i in range(0, len(obstacles)):
+            gap = obstacles[i] - last_obstacle.x
+            if gap > max_gap:
+                max_gap = gap
+                new_max_gap_obstacle = Obstacle(obstacles[i], max_gap, last_max_gap_obstacle)
+                obstacles_max_gaps[new_max_gap_obstacle.x] = new_max_gap_obstacle
+                last_max_gap_obstacle.next = new_max_gap_obstacle
+                last_max_gap_obstacle = new_max_gap_obstacle
+            new_obstacle = Obstacle(obstacles[i], max_gap, last_obstacle)
+            obstacles_tree[new_obstacle.x] = new_obstacle
+            last_obstacle.next = new_obstacle
+            last_obstacle = new_obstacle
 
-        fw = Fenwick(mx + 2)
-        st = SegTree(mx + 1)
+        first_obstacle.deep_print()
+        first_max_gap_obstacle.deep_print()
 
-        fw.add(1, 1)
-
-        ans: List[bool] = []
-
-        for q in queries:
-            t = q[0]
-            x = q[1]
-
-            if t == 1:
-                left_count = fw.sum(x)
-                left_pos = fw.kth(left_count) - 1
-
-                occupied_up_to_x = fw.sum(x + 1)
-                total_occupied = fw.sum(mx + 2)
-                right_pos = -1
-                if occupied_up_to_x < total_occupied:
-                    right_pos = fw.kth(occupied_up_to_x + 1) - 1
-
-                st.update(1, 0, mx, x, x - left_pos)
-
-                if right_pos != -1:
-                    st.update(1, 0, mx, right_pos, right_pos - x)
-
-                fw.add(x + 1, 1)
+        result = []
+        for query in reversed(queries):
+            if query[0] == 1:
+                self.remove(obstacles_tree, obstacles_max_gaps, query[1])
             else:
-                sz = q[2]
-
-                left_count = fw.sum(x)
-                left_pos = fw.kth(left_count) - 1
-
-                best_prefix = st.query(1, 0, mx, 0, x)
-
-                ans.append((x - left_pos >= sz) or (best_prefix >= sz))
-
-        return ans
+                can_place_r = self.can_place(obstacles_tree, obstacles_max_gaps, query[1], query[2])
+                result.append(can_place_r)
+        result.reverse()
+        return result
