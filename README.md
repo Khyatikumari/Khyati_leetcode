@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0045-jump-game-ii) |
 | [0047-permutations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0047-permutations-ii) |
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
+| [0051-n-queens](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0051-n-queens) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0040-combination-sum-ii) |
 | [0047-permutations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0047-permutations-ii) |
+| [0051-n-queens](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0051-n-queens) |
 ## Bit Manipulation
 |  |
 | ------- |
