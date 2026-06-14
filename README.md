@@ -143,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0002-add-two-numbers) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0061-rotate-list](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0061-rotate-list) |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Math
 |  |
 | ------- |
@@ -197,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0061-rotate-list](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0061-rotate-list) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1861-rotating-the-box](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1861-rotating-the-box) |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2540-minimum-common-value](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2540-minimum-common-value) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
@@ -288,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0042-trapping-rain-water) |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Backtracking
 |  |
 | ------- |
