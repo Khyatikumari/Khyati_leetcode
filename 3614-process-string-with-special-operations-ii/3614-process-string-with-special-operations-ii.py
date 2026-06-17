@@ -1,38 +1,41 @@
 class Solution:
     def processStr(self, s: str, k: int) -> str:
-        length = 0
-
-        # Step 1: compute final length
+        # First pass, identify the final length of the string
+        l = 0
         for c in s:
             if c == '*':
-                length = max(0, length - 1)
+                if l > 0:
+                    l -= 1
             elif c == '#':
-                length *= 2
-            elif c != '%':
-                length += 1
+                l *= 2
+            elif c == '%':
+                pass
+            else:
+                l += 1
 
-        if k >= length:
+        # We must be looking for position 'k' within the length 'l',
+        # otherwise return undefined char
+        if k >= l:
             return '.'
 
-        # Step 2: backward simulation
-        for i in range(len(s) - 1, -1, -1):
-            c = s[i]
-
+        # Second pass: Update `k`, and `l` which dynamically tracks
+        # the length of the string while backtracking.
+        ptr = k
+        for c in s[::-1]:
             if c == '*':
-                length += 1
-
+                l += 1
             elif c == '#':
-                half = length // 2
-                if k >= half:
-                    k -= half
-                length = half
-
+                if ptr >= l // 2:
+                    ptr -= l // 2
+                l = l // 2
             elif c == '%':
-                k = length - 1 - k
-
+                # even length string: let's say l == 2, then 0<=>1
+                # odd length string: let's say l == 3, then 0<=>2, 1 unchanged
+                # either way:
+                ptr = (l - 1) - ptr
             else:
-                if k == length - 1:
+                # Early return: the character was added here
+                if l == ptr + 1:
                     return c
-                length -= 1
-
-        return '.'
+                l -= 1
+        return s[ptr]
