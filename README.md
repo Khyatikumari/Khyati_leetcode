@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3120-count-the-number-of-special-characters-i](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3612-process-string-with-special-operations-i](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3612-process-string-with-special-operations-i) |
+| [3614-process-string-with-special-operations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3614-process-string-with-special-operations-ii) |
 | [3838-weighted-word-mapping](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3838-weighted-word-mapping) |
 ## Dynamic Programming
 |  |
@@ -288,6 +289,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2553-separate-the-digits-in-an-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2553-separate-the-digits-in-an-array) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3612-process-string-with-special-operations-i](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3612-process-string-with-special-operations-i) |
+| [3614-process-string-with-special-operations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3614-process-string-with-special-operations-ii) |
 | [3838-weighted-word-mapping](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3838-weighted-word-mapping) |
 ## Stack
 |  |
