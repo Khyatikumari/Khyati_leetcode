@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0047-permutations-ii) |
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0051-n-queens) |
+| [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
@@ -119,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0045-jump-game-ii) |
+| [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
@@ -369,6 +371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3737-count-subarrays-with-majority-element-i) |
 ## Merge Sort
 |  |
