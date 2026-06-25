@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0054-spiral-matrix) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
@@ -287,6 +288,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0054-spiral-matrix) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1861-rotating-the-box](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1861-rotating-the-box) |
 | [1914-cyclically-rotating-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1914-cyclically-rotating-a-grid) |
@@ -306,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
+| [0054-spiral-matrix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0054-spiral-matrix) |
 | [1914-cyclically-rotating-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1914-cyclically-rotating-a-grid) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2553-separate-the-digits-in-an-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2553-separate-the-digits-in-an-array) |
