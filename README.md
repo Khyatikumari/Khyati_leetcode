@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0055-jump-game) |
+| [0057-insert-interval](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0057-insert-interval) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
