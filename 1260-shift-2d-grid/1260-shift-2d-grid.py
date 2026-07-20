@@ -1,19 +1,5 @@
-class Solution:
-    def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
-        if not k: return grid
-        r, c = len(grid), len(grid[0])
-        n = r * c
-        k %= n
-        if not k: return grid
-
-        def shift(i, j):
-            while i < j:
-                grid[i // c][i % c], grid[j // c][j % c] = grid[j // c][j % c], grid[i // c][i % c]
-                i += 1
-                j -= 1
-
-        shift(0, n - 1)
-        shift(0, k - 1)
-        shift(k, n - 1)
-        
-        return grid
+class Solution(object):
+    def shiftGrid(self, grid, k):
+        l, m, n, k = [num for row in grid for num in row], len(grid), len(grid[0]), k % (len(grid) * len(grid[0]))  # grid to list
+        l = l[-k:] + l[:-k]  # shift k times
+        return [l[i * n: i * n + n] for i in range(m)]  # list to grid
