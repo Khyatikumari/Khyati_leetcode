@@ -1,25 +1,14 @@
 class Solution:
     def maxActiveSectionsAfterTrade(self, s: str) -> int:
-        ones = s.count("1")
-
-        t = "1" + s + "1"
-
-        runs = []
-
-        for ch in t:
-            if not runs or runs[-1][0] != ch:
-                runs.append([ch, 1])
-            else:
-                runs[-1][1] += 1
-
-        best = 0
-
-        for i in range(1, len(runs) - 1):
-            if (
-                runs[i][0] == "1"
-                and runs[i - 1][0] == "0"
-                and runs[i + 1][0] == "0"
-            ):
-                best = max(best, runs[i - 1][1] + runs[i + 1][1])
-
+        # Count total 1s in the original string
+        ones = s.count('1')   
+        # Pad with '1' to correctly capture boundary 0-runs
+        padded_s = '1' + s + '1' 
+        # Extract only valid, non-empty 0-runs
+        zero_runs = [len(run) for run in padded_s.split('1') if run] 
+        # If there are fewer than two valid 0-runs, no trade pattern is possible
+        if len(zero_runs) < 2:
+            return ones     
+        # Find the maximum sum of any two adjacent valid 0-runs
+        best = max(zero_runs[i] + zero_runs[i+1] for i in range(len(zero_runs) - 1)) 
         return ones + best
