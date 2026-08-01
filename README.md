@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
+| [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1260-shift-2d-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1288-remove-covered-intervals) |
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0055-jump-game) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
+| [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [1301-number-of-paths-with-max-score](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
@@ -227,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0050-powx-n) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
+| [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1344-angle-between-hands-of-a-clock) |
@@ -261,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0002-add-two-numbers) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0050-powx-n) |
+| [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 ## Sliding Window
 |  |
 | ------- |
@@ -534,4 +538,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [3312-sorted-gcd-pair-queries](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3312-sorted-gcd-pair-queries) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3518-smallest-palindromic-rearrangement-ii) |
+## Game Theory
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
