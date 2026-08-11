@@ -1,31 +1,40 @@
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
-        vector<vector<int>> matrix(n, vector<int>(n, 0));
-        int top = 0, down = n - 1;
-        int left = 0, right = n - 1;
-        int currElement = 1;
+        vector<vector<int>> matrix(n, vector<int>(n));
 
-        while (currElement <= n * n) {
-            // move left to right, row = top fixed
-            for (int c = left; c <= right; c++)
-                matrix[top][c] = currElement++;
+        int top = 0;
+        int bottom = n - 1;
+        int left = 0;
+        int right = n - 1;
+
+        int num = 1;
+
+        while (top <= bottom && left <= right) {
+
+            for (int i = left; i <= right; i++) {
+                matrix[top][i] = num++;
+            }
             top++;
 
-            // move top to down, col = right fixed
-            for (int r = top; r <= down; r++)
-                matrix[r][right] = currElement++;
+            for (int i = top; i <= bottom; i++) {
+                matrix[i][right] = num++;
+            }
             right--;
 
-            // move right to left, row = down fixed
-            for (int c = right; c >= left && currElement <= n * n; c--)
-                matrix[down][c] = currElement++;
-            down--;
+            if (top <= bottom) {
+                for (int i = right; i >= left; i--) {
+                    matrix[bottom][i] = num++;
+                }
+                bottom--;
+            }
 
-            // move down to top, col = left fixed
-            for (int r = down; r >= top && currElement <= n * n; r--)
-                matrix[r][left] = currElement++;
-            left++;
+            if (left <= right) {
+                for (int i = bottom; i >= top; i--) {
+                    matrix[i][left] = num++;
+                }
+                left++;
+            }
         }
 
         return matrix;
