@@ -260,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0050-powx-n) |
+| [0060-permutation-sequence](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0060-permutation-sequence) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0628-maximum-product-of-three-numbers) |
@@ -304,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0002-add-two-numbers) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0050-powx-n) |
+| [0060-permutation-sequence](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0060-permutation-sequence) |
 | [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 ## Sliding Window
 |  |
