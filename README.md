@@ -162,6 +162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1871-jump-game-vii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1871-jump-game-vii) |
+| [1927-sum-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1927-sum-game) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
@@ -273,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1510-stone-game-iv](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1563-stone-game-v) |
 | [1840-maximum-building-height](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1840-maximum-building-height) |
+| [1927-sum-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1927-sum-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2029-stone-game-ix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2029-stone-game-ix) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -367,6 +369,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1833-maximum-ice-cream-bars](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
+| [1927-sum-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2029-stone-game-ix) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2126-destroying-asteroids](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2126-destroying-asteroids) |
@@ -617,6 +620,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1563-stone-game-v) |
+| [1927-sum-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2029-stone-game-ix) |
 ## Minimax
 |  |
