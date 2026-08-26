@@ -1,26 +1,21 @@
 class Solution:
     def shortestBeautifulSubstring(self, s: str, k: int) -> str:
-        ans = ""
-        n = len(s)
+        cnt1 = 0 
+        left = 0 
+        ans = s 
+        if s.count('1') < k:
+            return ''
 
-        for i in range(n):
+        for right, x in enumerate(s):
+            if x == '1':
+                cnt1 += int(x)
 
-            oneCnt = 0
-            cur = ""
+            while cnt1 > k or s[left] == '0':
 
-            for j in range(i, n):
-
-                cur += s[j]
-
-                if s[j] == '1':
-                    oneCnt += 1
-
-                # More than k ones can never become valid again
-                if oneCnt > k:
-                    break
-
-                if oneCnt == k:
-                    if ans == "" or len(cur) < len(ans) or (len(cur) == len(ans) and cur < ans):
-                        ans = cur
-
-        return ans
+                cnt1 -= int(s[left])
+                left += 1 
+            if cnt1 == k:
+                 t = s[left: right + 1]
+                 if len(t) < len(ans) or len(t) == len(ans) and t < ans:
+                    ans = t
+        return ans 
