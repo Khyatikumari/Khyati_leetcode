@@ -202,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0062-unique-paths) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
@@ -275,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0060-permutation-sequence) |
+| [0062-unique-paths](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0062-unique-paths) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0628-maximum-product-of-three-numbers) |
@@ -630,6 +632,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Combinatorics
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0062-unique-paths) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3312-sorted-gcd-pair-queries) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3518-smallest-palindromic-rearrangement-ii) |
