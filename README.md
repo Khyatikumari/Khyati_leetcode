@@ -168,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0058-length-of-last-word) |
+| [0115-distinct-subsequences](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0115-distinct-subsequences) |
 | [0796-rotate-string](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0796-rotate-string) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1189-maximum-number-of-balloons) |
@@ -209,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0062-unique-paths) |
+| [0115-distinct-subsequences](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0115-distinct-subsequences) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
 | [0788-rotated-digits](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0788-rotated-digits) |
