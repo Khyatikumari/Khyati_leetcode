@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0055-jump-game) |
 | [0057-insert-interval](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0057-insert-interval) |
 | [0059-spiral-matrix-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0059-spiral-matrix-ii) |
+| [0063-unique-paths-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0063-unique-paths-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
@@ -215,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0062-unique-paths) |
+| [0063-unique-paths-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0063-unique-paths-ii) |
 | [0115-distinct-subsequences](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0115-distinct-subsequences) |
 | [0396-rotate-function](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0396-rotate-function) |
 | [0486-predict-the-winner](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0486-predict-the-winner) |
@@ -512,6 +514,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0054-spiral-matrix) |
 | [0059-spiral-matrix-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0059-spiral-matrix-ii) |
+| [0063-unique-paths-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0063-unique-paths-ii) |
 | [1260-shift-2d-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1301-number-of-paths-with-max-score) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
