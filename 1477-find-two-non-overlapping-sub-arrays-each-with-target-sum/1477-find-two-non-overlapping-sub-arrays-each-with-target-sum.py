@@ -1,35 +1,31 @@
 from typing import List
 
-
 class Solution:
     def minSumOfLengths(self, arr: List[int], target: int) -> int:
         n = len(arr)
+        INF = float('inf')
 
-        best = [float("inf")] * n
-
+        best = [INF] * n
         left = 0
-        total = 0
-        answer = float("inf")
+        curr = 0
+        ans = INF
+        min_len = INF
 
         for right in range(n):
-            total += arr[right]
+            curr += arr[right]
 
-            while total > target:
-                total -= arr[left]
+            while curr > target:
+                curr -= arr[left]
                 left += 1
 
-            if total == target:
-                current_length = right - left + 1
+            if curr == target:
+                length = right - left + 1
 
-                if left > 0 and best[left - 1] != float("inf"):
-                    answer = min(
-                        answer,
-                        current_length + best[left - 1]
-                    )
+                if left > 0 and best[left - 1] != INF:
+                    ans = min(ans, length + best[left - 1])
 
-                best[right] = current_length
+                min_len = min(min_len, length)
 
-            if right > 0:
-                best[right] = min(best[right], best[right - 1])
+            best[right] = min_len
 
-        return -1 if answer == float("inf") else answer
+        return -1 if ans == INF else ans
