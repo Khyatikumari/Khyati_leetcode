@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0041-first-missing-positive](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0041-first-missing-positive) |
+| [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [1189-maximum-number-of-balloons](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1189-maximum-number-of-balloons) |
 | [1331-rank-transform-of-an-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1345-jump-game-iv](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1345-jump-game-iv) |
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0796-rotate-string](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0796-rotate-string) |
 | [0940-distinct-subsequences-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0940-distinct-subsequences-ii) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [1189-maximum-number-of-balloons](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1189-maximum-number-of-balloons) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -266,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0047-permutations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0047-permutations-ii) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [1288-remove-covered-intervals](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1340-jump-game-v](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1340-jump-game-v) |
@@ -522,6 +525,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [1306-jump-game-iii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1345-jump-game-iv) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
@@ -589,6 +593,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0042-trapping-rain-water) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Backtracking
 |  |
@@ -598,6 +603,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0052-n-queens-ii) |
+| [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Bit Manipulation
 |  |
