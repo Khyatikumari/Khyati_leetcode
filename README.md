@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0058-length-of-last-word) |
 | [0115-distinct-subsequences](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0115-distinct-subsequences) |
+| [0301-remove-invalid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0678-valid-parenthesis-string](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0796-rotate-string](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0796-rotate-string) |
 | [0856-score-of-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0856-score-of-parentheses) |
@@ -542,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0301-remove-invalid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [1306-jump-game-iii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1345-jump-game-iv) |
@@ -629,6 +631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0052-n-queens-ii) |
+| [0301-remove-invalid-parentheses](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [1096-brace-expansion-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/1096-brace-expansion-ii) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Khyatikumari/Khyati_leetcode/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Bit Manipulation
