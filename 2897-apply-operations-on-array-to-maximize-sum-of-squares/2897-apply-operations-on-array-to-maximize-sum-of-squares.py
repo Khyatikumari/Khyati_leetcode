@@ -1,22 +1,24 @@
 class Solution:
     def maxSum(self, nums: List[int], k: int) -> int:
-        MOD = 10**9 + 7
-        bits = [0] * 31
+        x = 1
+        base = []
+        while x <= 1000000000:
+            base.append(x)
+            x = x << 1
+        nb = len(base)
+        count = [0] * nb
 
         for x in nums:
-            for b in range(31):
-                if x & (1 << b):
-                    bits[b] += 1
-
-        ans = 0
-
-        for _ in range(k):
-            x = 0
-            for b in range(31):
-                if bits[b] > 0:
-                    x |= 1 << b
-                    bits[b] -= 1
-
-            ans = (ans + x * x) % MOD
-
-        return ans
+            for i, y in enumerate(base):
+                if x & y:
+                    count[i] += 1
+        
+        x = [0] * k
+        for i in range(nb):
+            for j in range(min(k, count[i])):
+                x[j] += base[i]
+                
+        res = 0
+        for y in x:
+            res = (res + y * y) % 1000000007
+        return res
