@@ -1,3 +1,10 @@
 class Solution:
     def checkString(self, s: str) -> bool:
-        return all(map(le, s, islice(s, 1, None)))
+        bseen = False
+        for c in s:
+            if c == 'a':
+                if bseen:
+                    return False
+            else:
+                bseen = True
+        return True
